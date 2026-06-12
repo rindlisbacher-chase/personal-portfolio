@@ -16,7 +16,7 @@ export const projects: Project[] = [
       'Lord of the Rings themed minigames including Hangman, Riddles with Gollum, and Math Ciphers. Read up on your favorite LOTR characters from the books or movies.',
     tags: ['TypeScript', 'React'],
     githubUrl: 'https://github.com/rindlisbacher-chase/lotr-minigames',
-    liveDemoUrl: null,
+    liveDemoUrl: 'https://rindlisbacher-chase.github.io/',
     thumbnailUrl: '/the-one-ring.png',
   },
   {

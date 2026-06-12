@@ -33,7 +33,7 @@ export const site = {
       {
         degree: 'B.A. Information Systems',
         school: 'Brigham Young University',
-        detail: 'Emphasis in software development',
+        detail: '',
       },
     ],
     experience: [

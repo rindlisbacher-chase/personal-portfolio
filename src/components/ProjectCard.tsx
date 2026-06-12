@@ -5,9 +5,22 @@ interface ProjectCardProps {
   project: Project
 }
 
+function getProjectUrl(project: Project): string {
+  return project.liveDemoUrl ?? project.githubUrl
+}
+
 export function ProjectCard({ project }: ProjectCardProps) {
+  const projectUrl = getProjectUrl(project)
+
   return (
     <article className="project-card">
+      <a
+        className="project-card__overlay"
+        href={projectUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`View ${project.title}`}
+      />
       <div className="project-card__media">
         <img
           src={project.thumbnailUrl}
