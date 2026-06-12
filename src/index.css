@@ -1,0 +1,84 @@
+:root {
+  --text: #3d3d45;
+  --text-muted: #6b6b76;
+  --text-h: #1a1a1f;
+  --bg: #f7f5f1;
+  --surface: #ffffff;
+  --border: #e3ded6;
+  --accent: #2d6a4f;
+  --accent-hover: #245a43;
+  --accent-bg: rgba(45, 106, 79, 0.1);
+
+  --font-body: 'Nunito Sans', system-ui, sans-serif;
+  --font-heading: 'Fraunces', Georgia, serif;
+
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--text);
+  background-color: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100svh;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  color: var(--text-h);
+  line-height: 1.2;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.25rem;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
