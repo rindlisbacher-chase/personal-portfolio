@@ -1,0 +1,134 @@
+.site-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(247, 245, 241, 0.92);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(8px);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0.875rem 1.5rem;
+}
+
+.site-header__brand {
+  color: var(--text-h);
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.site-header__brand:hover {
+  color: var(--accent);
+}
+
+.site-header__nav {
+  display: flex;
+  gap: 1.5rem;
+  margin-inline: auto;
+}
+
+.site-header__link {
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.site-header__link:hover,
+.site-header__link--active {
+  color: var(--accent);
+}
+
+.site-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.site-header__view-resume {
+  color: var(--accent);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.site-header__view-resume:hover {
+  text-decoration: underline;
+}
+
+.site-main {
+  flex: 1;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.site-footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.site-footer__copyright {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.site-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.site-footer__links a {
+  text-decoration: none;
+}
+
+.site-footer__links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .site-header__inner {
+    flex-wrap: wrap;
+  }
+
+  .site-header__nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin-inline: 0;
+  }
+
+  .site-header__view-resume {
+    display: none;
+  }
+
+  .site-footer__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
