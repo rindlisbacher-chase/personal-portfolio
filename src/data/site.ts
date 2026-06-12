@@ -20,7 +20,7 @@ export const site = {
   },
   about: {
     paragraphs: [
-      "Hi, I'm Chase Rindlisbacher and welcome to my portfolio website! I love the problem solving aspect of software engineering and get immense satisfaction taking a product idea from a vision to reality. I've worked as a software engineer and full-stack web developer for 3+ years and have my BA and MA in Information Systems from BYU with an emphasis in software development.",
+      "Hi, I'm Chase Rindlisbacher and welcome to my portfolio website! I love the problem solving aspect of software engineering and get immense satisfaction taking a product idea from a vision to reality. I've worked as a software engineer and full-stack web developer for 3+ years and have my BA and MA in Information Systems from BYU with an emphasis in software development. In the age of AI, I've been using AI tools to help me code more efficiently and effectively while remaining a great critical thinker.",
       'In my spare time I enjoy playing board and card games with my wife, playing tennis and basketball, indoor and outdoor rock climbing, reading/listening to fantasy novels, and watching movies while eating popcorn.',
       "I'm looking for work as a full-stack software engineer or web-developer where I'll be able to keep learning new technologies, work with amazing coworkers that make work a fun place to be, where the employers care about work-life balance for employees, and where I can make a positive impact on the world. I'm also open to working in DevOps.",
     ],
